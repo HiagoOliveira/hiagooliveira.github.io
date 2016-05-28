@@ -1,1 +1,36 @@
 /*CSS principal da página*/
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 62.5%;
+}
+
+a {
+	color: black;
+	font-size: 3.5em;
+}
+
+#topo {
+	background: url('../images/Blue-Wallpaper-colors-34503103-1440-900.png') no-repeat;
+	height: 100vh;
+}
+
+.navbar-nav {
+	margin: 40px 0;
+}
+
+#nome {
+	font-size: 10em;
+	text-align: center;
+	color: rgba(10, 209, 158, 1);
+}
+
+.container-box {
+	width: 90%;
+	background-color: red;
+	margin: 0 auto;
+	height: 100vh;
+}
+
+.menu-topo {
+	background-color: blue;
+}
