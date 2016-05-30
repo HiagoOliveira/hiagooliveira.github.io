@@ -4,8 +4,12 @@ body {
 	font-size: 62.5%;
 }
 
-a, p {
-	color: black;
+a, p, h1, h2, h3 {
+	color: rgba(0, 0, 0, 0.85);
+}
+
+a:focus {
+	outline: none;
 }
 
 .navbar-brand, .nav > li > a {
@@ -17,44 +21,75 @@ a, p {
 	color: #0AD19E;
 }
 
-.nav > li > a {
-	position: relative;
-}
+@media screen and (min-width: 768px) {
+	.nav > li > a:focus, .nav > li > a:hover {
+		background: none;
+		color: initial;
+	}
 
-.nav > li > a:focus, .nav > li > a:hover {
-	background: none;
-	color: initial;
-}
+	.nav > li > a::before {
+		background: #0AD19E;
+		content: '';
+		display: block;
+		height: 5px;
+		opacity: 0;
+		position: relative;
+		top: -30px;
+		transition: opacity 400ms linear ,top 250ms ease-in-out;
+		-moz-transition: opacity 400ms linear ,top 250ms ease-in-out;
+		-webkit-transition: opacity 400ms linear ,top 250ms ease-in-out;
+		width: 100%;
+	  
+	}
 
-.nav > li > a:before {
-  background: #0AD19E;
-  content: '';
-  display: block;
-  height: 5px;
-  opacity: 0;
-  position: absolute;
-  top: -40px;
-  width: 65%;
-  
-}
-
-.nav > li > a:focus:before, .nav > li > a:hover:before {
-  top: 10px;
-  transition: opacity 400ms linear ,top 250ms ease-in-out;
-  -moz-transition: opacity 400ms linear ,top 250ms ease-in-out;
-  -webkit-transition: opacity 400ms linear ,top 250ms ease-in-out;
-  opacity: 1;
+	.nav > li > a:focus::before, .nav > li > a:hover::before {
+		top: -5px;
+		transition: opacity 400ms linear ,top 250ms ease-in-out;
+		-moz-transition: opacity 400ms linear ,top 250ms ease-in-out;
+		-webkit-transition: opacity 400ms linear ,top 250ms ease-in-out;
+		opacity: 1;
+	}
 }
 
 #topo {
-	background: url('../images/Blue-Wallpaper-colors-34503103-1440-900.png') no-repeat center center;
+	background: url('../images/Blue-Wallpaper-colors-34503103-1440-900.jpg') no-repeat center center;
 	-webkit-background-size: cover;
 	background-size: cover;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 #nome {
 	color: rgba(10, 209, 158, 1);
 	font-size: 10em;
-	text-align: center;	
+	margin: 1.2em 0;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#descricao {
+	margin: 0.6em 0 1.2em;
+	text-align: center;
+	text-shadow: 0px 1px 1px rgba(255,255,255, 0.3);
+}
+
+#scroll-down {
+	background: none;
+	border: none;
+	display: block;
+	margin: 0 auto;
+	width: 50px;
+}
+
+.down-arrow {
+	display: block;
+}
+
+.down-arrow::before {
+	content: url('../images/down-arrow.png');
+	display: block;
+}
+
+#caracteristicas {
+	background-color: aliceblue;
+	height: 370px;
 }
