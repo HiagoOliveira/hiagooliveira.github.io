@@ -4,33 +4,57 @@ body {
 	font-size: 62.5%;
 }
 
-a {
+a, p {
 	color: black;
+}
+
+.navbar-brand, .nav > li > a {
 	font-size: 3.5em;
+	text-shadow: 0px 1px 1px rgba(255,255,255, 0.3);
+}
+
+.navbar-brand:hover {
+	color: #0AD19E;
+}
+
+.nav > li > a {
+	position: relative;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+	background: none;
+	color: initial;
+}
+
+.nav > li > a:before {
+  background: #0AD19E;
+  content: '';
+  display: block;
+  height: 5px;
+  opacity: 0;
+  position: absolute;
+  top: -40px;
+  width: 65%;
+  
+}
+
+.nav > li > a:focus:before, .nav > li > a:hover:before {
+  top: 10px;
+  transition: opacity 400ms linear ,top 250ms ease-in-out;
+  -moz-transition: opacity 400ms linear ,top 250ms ease-in-out;
+  -webkit-transition: opacity 400ms linear ,top 250ms ease-in-out;
+  opacity: 1;
 }
 
 #topo {
-	background: url('../images/Blue-Wallpaper-colors-34503103-1440-900.png') no-repeat;
+	background: url('../images/Blue-Wallpaper-colors-34503103-1440-900.png') no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
 	height: 100vh;
-}
-
-.navbar-nav {
-	margin: 40px 0;
 }
 
 #nome {
-	font-size: 10em;
-	text-align: center;
 	color: rgba(10, 209, 158, 1);
-}
-
-.container-box {
-	width: 90%;
-	background-color: red;
-	margin: 0 auto;
-	height: 100vh;
-}
-
-.menu-topo {
-	background-color: blue;
+	font-size: 10em;
+	text-align: center;	
 }

@@ -4,15 +4,18 @@
     <title>Hiago Oliveira</title>
     <meta charset="utf-8" lang="pt-br">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Hiago's portifolio: a begginer web designer">
+    <meta name="description" content="Hiago Oliveira: web designer e programador web">
     <meta name="author" content="Hiago Oliveira">
-    <meta name="keywords" content="HTML, CSS, Portifolio, Hiago, Oliveira">
+    <meta name="keywords" content="HTML, CSS, Portifolio, Hiago Oliveira, Git Hub">
+    <meta name="robots" content="index, follow">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">    
     <link type="text/css" rel="stylesheet" href="css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/hamburger-menu.css">
+    
 
 </head>
 
@@ -20,24 +23,40 @@
     <main>
         <section id="topo">
             <header>
-                <nav class="container navbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Projetos</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <div class="burger-icon">
+                                    <span class="burger-bun-top"></span>
+                                    <span class="burger-middle"></span>
+                                    <span class="burger-bun-bottom"></span>
+                                </div>                                 
+                            </button>
+                            <a class="navbar-brand" href="#">Hiago</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Sobre</a></li>
+                                <li><a href="#">Projetos</a></li>
+                                <li><a href="#">Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </header>
 
             <div class="container">
                 <h1 id="nome">Hiago Oliveira</h1>
             </div>
+
         </section>
+
     </main>
-</body>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    
+</body>    
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/hamburger-menu.js"></script>
 </html>
